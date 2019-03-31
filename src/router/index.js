@@ -144,6 +144,14 @@ export const constantRouterMap = [
                 meta: { title: "商品修改" },
                 hidden: true
             }
+            // {
+            //     path: "delgood",
+            //     name: "product-delgoods",
+            //     component: () => import("@/views/product/pro/deltPro"),
+            //     meta: { title: "商品删除" },
+            //     hidden: true
+
+            // }
         ]
     },
     {

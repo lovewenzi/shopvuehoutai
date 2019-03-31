@@ -26,7 +26,7 @@
                 <template slot-scope="scope">
                     <div>
                         <el-tag type="success">商品属性1 :</el-tag>
-                        <el-tag v-if="scope.row.attr1"
+                        <el-tag v-if="scope.row.attr1">
                             v-for="(item, index) in scope.row.attr1"
                             :key="index"
                             closable
@@ -50,7 +50,7 @@
                     <p style="border-bottom: solid #ebeef5 1px"></p>
                     <div style="margin-top: 5px">
                         <el-tag type="success">商品属性2 :</el-tag>
-                        <el-tag v-if="scope.row.attr2"
+                        <el-tag v-if="scope.row.attr2">
                             v-for="(item, index) in scope.row.attr2"
                             :key="index"
                             closable

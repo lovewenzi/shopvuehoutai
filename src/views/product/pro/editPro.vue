@@ -123,18 +123,18 @@
             </el-upload>
             <el-row>
                 <el-col :span="12">
-                    <el-form-item label="是否上架"
+                    <el-form-item label="是否热卖"
                         prop="is_hot">
                         <el-radio v-model.number="formValue.is_hot"
                             :label="1"
-                            border>上架</el-radio>
+                            border>是</el-radio>
                         <el-radio v-model.number="formValue.is_hot"
                             :label="0"
-                            border>下架</el-radio>
+                            border>否</el-radio>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12">
-                    <el-form-item label="是否热卖"
+                    <el-form-item label="是否上架"
                         prop="status">
                         <el-radio v-model.number="formValue.status"
                             :label="1"

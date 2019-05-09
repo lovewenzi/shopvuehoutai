@@ -3,10 +3,10 @@
         <el-row>
             <el-col :span="12"
                 style="height: 300px;"
-                id="member">
+                id="sales">
             </el-col>
             <el-col :span="12"
-                id="sales"
+                id="member"
                 style="height: 300px;">
             </el-col>
         </el-row>
@@ -103,7 +103,7 @@ export default {
             this.$router.push(url)
         },
         initChart1() {
-            this.echarts1 = echarts.init(document.getElementById('member'))
+            this.echarts1 = echarts.init(document.getElementById('sales'))
             this.echarts1.setOption({
                 title: {
                     x: 'center',
@@ -139,7 +139,7 @@ export default {
             })
         },
         initChart2() {
-            this.echarts2 = echarts.init(document.getElementById('sales'))
+            this.echarts2 = echarts.init(document.getElementById('member'))
             this.echarts2.setOption({
                 title: {
                     x: 'center',
